@@ -17,16 +17,24 @@
       color: white;
       padding: 20px;
     }
-    .menu-image {
-      max-width: 90%;
-      margin: 20px auto;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .buttons {
+      margin: 20px;
     }
     .buttons a {
       display: inline-block;
       padding: 15px 25px;
-      margin: 20px;
+      margin: 10px;
       font-size: 16px;
       background-color: #7b3f00;
       color: white;
@@ -64,7 +72,14 @@
     <p>Delicious meals at your fingertips</p>
   </header>
 
-  <img class="menu-image" src="menu.jpg" alt="Kobiloz Menu" />
+  <div class="gallery">
+    <img src="WhatsApp Image 2025-07-16 at 20.11.20_aa05d461.jpg" alt="Menu Image" />
+    <img src="WhatsApp Image 2025-07-16 at 20.11.20_f4b0bd5b.jpg" alt="Menu Image" />
+    <img src="WhatsApp Image 2025-07-16 at 20.11.21_13029f7d.jpg" alt="Menu Image" />
+    <img src="WhatsApp Image 2025-07-16 at 20.11.21_99242eba.jpg" alt="Menu Image" />
+    <img src="WhatsApp Image 2025-07-16 at 20.11.22_5db89ca1.jpg" alt="Menu Image" />
+    <img src="WhatsApp Image 2025-07-16 at 20.11.22_6a8cf151.jpg" alt="Menu Image" />
+  </div>
 
   <div class="buttons">
     <a href="https://wa.me/254769537916" target="_blank">Order Now via WhatsApp</a>
