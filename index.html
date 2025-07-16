@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kobiloz Café Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #7b3f00;
+      color: white;
+      padding: 20px;
+    }
+    .menu-image {
+      max-width: 90%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 20px;
+      font-size: 16px;
+      background-color: #7b3f00;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto 50px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #7b3f00;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Kobiloz Café</h1>
+    <p>Delicious meals at your fingertips</p>
+  </header>
+
+  <img class="menu-image" src="menu.jpg" alt="Kobiloz Menu" />
+
+  <div class="buttons">
+    <a href="https://wa.me/254769537916" target="_blank">Order Now via WhatsApp</a>
+  </div>
+
+  <h2>Leave a Review</h2>
+  <form>
+    <input type="text" placeholder="Your name" required />
+    <textarea rows="4" placeholder="Write your review here..." required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for your review!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
